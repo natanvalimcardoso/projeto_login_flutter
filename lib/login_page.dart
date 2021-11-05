@@ -61,7 +61,8 @@ class _LoginPageState extends State<LoginPage> {
                       margin: EdgeInsets.only(top: 20),
                       child: Text(
                         'Forgot Password',
-                        style: TextStyle(color: Colors.blue),
+                        style: TextStyle(color: Colors.blue, fontWeight: FontWeight. bold),
+                        
                       ),
                     )
                   ],
@@ -117,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {},
                         child: Text(
                           "Login",
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(fontSize: 18, fontWeight: FontWeight. bold),
                         ),
                       ),
                     ),

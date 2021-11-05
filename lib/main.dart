@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_login_flutter/profile_page.dart';
 import './login_page.dart';
 
 void main() {
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(title: 'Flutter Demo Home Page'),
+      home: const ProfilePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
