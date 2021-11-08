@@ -42,9 +42,51 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               width: 120,
               height: 120,
-              
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 270.0, left: 160.0),
+            child: Row(
+              children: [
+                Text(
+                  'Natan',
+                  style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.none),
+                )
+              ],
+            ),
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Card(
+                    child: SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.12,
+                        height: MediaQuery.of(context).size.height * 0.07,
+                        child: Image.asset('assets/facebook.png')),
+                  ),
+                  Card(
+                    child: SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.12,
+                        height: MediaQuery.of(context).size.height * 0.07,
+                        child: Image.asset('assets/google.png')),
+                  ),
+                  Card(
+                    child: SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.12,
+                        height: MediaQuery.of(context).size.height * 0.07,
+                        child: Image.asset('assets/apple.png')),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ],
       ),
     );
