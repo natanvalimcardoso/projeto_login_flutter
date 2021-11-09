@@ -45,14 +45,15 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 270.0, left: 160.0),
+            padding: const EdgeInsets.only(top: 270.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Natan',
+                  'Natan Valim',
                   style: TextStyle(
                       color: Colors.blue,
-                      fontSize: 30,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.none),
                 )
@@ -85,8 +86,58 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ],
               ),
+              Padding(
+                padding: new EdgeInsets.symmetric(horizontal: 16.0, vertical: 10 ),
+                child: Row(
+                  children: [
+                    Text(
+                      'About You',
+                      style: TextStyle(
+                        color: Colors.orange,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.none,
+                        fontSize: 15,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              
+              
             ],
           ),
+          Padding(
+                padding: const EdgeInsets.only(left: 20.0, right: 20, top: 400),
+                child: Wrap(
+                  children: [
+                    Text(
+                      'Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy textdsadsadasdasdasdasdassadasdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.normal,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+               Padding(
+                padding: const EdgeInsets.only(left: 20.0, right: 20, top: 460),
+                child: Wrap(
+                  children: [
+                    Text(
+                      'Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy textdsadsadasdasdasdasdassadasdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.normal,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                      ),
+                    )
+                  ],
+                ),
+              ),
         ],
       ),
     );
